@@ -1,0 +1,103 @@
+.works-teams {
+    padding-bottom: 94px;
+    padding-top: 94px;
+    background-color: var(--background-color-team);
+}
+
+.container__our-teams {
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    margin: 0;
+
+    &__team-group {
+        margin-right: 30px;
+        box-shadow: var(--box-shadow-card);
+    }
+    
+    &__team-group:nth-last-child(-n + 1){
+        margin-right: 0;
+    }
+    
+
+    
+    &__name {
+        margin-bottom: 10px;
+        white-space: nowrap;
+    }
+    
+    &__proff {
+        font-size: 16px;
+        line-height: 1.9;
+        display: block;
+    }
+    
+}
+
+.card-font {
+    padding-top: 30px;
+    padding-bottom: 16px;
+}
+
+.card-fone {
+    background: var(--primary-white-color);  
+    box-shadow: var(--box-shadow-item-media);
+    border-radius: 0px 0px 4px 4px;
+}
+
+/* icon */
+
+.socnetwork-icon {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    /* outline: 1px solid tomato; */
+    list-style: none;
+
+    &__img {
+        /* outline: 1px solid black; */
+        width: 20px;
+        height: 20px;
+         border: transparent;
+    }
+    
+    &__link {
+        display: flex;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        align-items: center;
+        background-color: var(--primary-white-color);
+        color: var(--icon-color);;
+        border-radius: 50%;
+        list-style: none;
+        cursor: pointer;
+    
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        /* outline: 1px solid black; */
+    }
+    
+    &__link:focus,
+    &__link:hover
+     {
+        fill: var(--primary-white-color);
+        background-color: var(--color-image-icon);
+        border: none;
+    }
+    
+    &__group {
+        border-radius: 50%;
+        background-color: var(--primary-white-color);   
+        fill: var(--icon-color);
+        /* outline: 1px solid teal; */ 
+    }
+}
+
+.media-icon {
+    padding: 0px 32px 30px 32px;
+}
+
