@@ -26,6 +26,11 @@
     &__name {
         margin-bottom: 10px;
         white-space: nowrap;
+
+        color: var(--title-text-color);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;
     }
     
     &__proff {
@@ -62,7 +67,8 @@
         /* outline: 1px solid black; */
         width: 20px;
         height: 20px;
-         border: transparent;
+        border: transparent;
+        
     }
     
     &__link {
@@ -76,6 +82,8 @@
         border-radius: 50%;
         list-style: none;
         cursor: pointer;
+        outline: none;
+
     
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
         /* outline: 1px solid black; */
@@ -86,7 +94,7 @@
      {
         fill: var(--primary-white-color);
         background-color: var(--color-image-icon);
-        border: none;
+
     }
     
     &__group {
